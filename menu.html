@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Desi Angithi Dhaba | Menu</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- ================= NAVBAR ================= -->
+<header class="navbar">
+    <div class="nav-container">
+        <div class="logo">Desi Angithi</div>
+
+        <nav class="nav-links" id="navLinks">
+            <a href="index.html">Home</a>
+            <a href="menu.html" class="active">Menu</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+
+        <div class="hamburger" id="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+    </div>
+</header>
+
+<!-- ================= MENU HERO ================= -->
+<section class="menu-hero">
+    <h1>Our Special Menu</h1>
+    <p>Pure Desi Swad • Fresh Ingredients • Dil Se Bana</p>
+</section>
+
+<!-- ================= MENU ITEMS ================= -->
+<section class="menu-section reveal">
+    <div class="menu-grid">
+
+        <!-- ITEM 1 -->
+        <div class="menu-card">
+            <img src="images/paneer-butter-masala.jpg" alt="Paneer Butter Masala">
+            <h3>Paneer Butter Masala</h3>
+            <p>Creamy tomato gravy with soft paneer cubes.</p>
+
+            <div class="price-row">
+                <span class="price">₹220</span>
+                <input type="number" min="1" value="1" class="qty">
+            </div>
+
+            <button class="btn add-btn ripple"
+                data-name="Paneer Butter Masala"
+                data-price="220">
+                Add to Order
+            </button>
+        </div>
+
+        <!-- ITEM 2 -->
+        <div class="menu-card">
+            <img src="images/butter-naanten.jpg" alt="Butter Naan">
+            <h3>Butter Naan</h3>
+            <p>Soft naan brushed with fresh butter.</p>
+
+            <div class="price-row">
+                <span class="price">₹40</span>
+                <input type="number" min="1" value="2" class="qty">
+            </div>
+
+            <button class="btn add-btn ripple"
+                data-name="Butter Naan"
+                data-price="40">
+                Add to Order
+            </button>
+        </div>
+
+        <!-- ITEM 3 -->
+        <div class="menu-card">
+            <img src="images/tandoori-chicken.jpg" alt="Tandoori Chicken">
+            <h3>Tandoori Chicken</h3>
+            <p>Smoky, juicy chicken roasted in clay tandoor.</p>
+
+            <div class="price-row">
+                <span class="price">₹320</span>
+                <input type="number" min="1" value="1" class="qty">
+            </div>
+
+            <button class="btn add-btn ripple"
+                data-name="Tandoori Chicken"
+                data-price="320">
+                Add to Order
+            </button>
+        </div>
+
+        <!-- ITEM 4 -->
+        <div class="menu-card">
+            <img src="images/dal-makhaniten.jpg" alt="Dal Makhani">
+            <h3>Dal Makhani</h3>
+            <p>Slow-cooked black lentils with butter & cream.</p>
+
+            <div class="price-row">
+                <span class="price">₹180</span>
+                <input type="number" min="1" value="1" class="qty">
+            </div>
+
+            <button class="btn add-btn ripple"
+                data-name="Dal Makhani"
+                data-price="180">
+                Add to Order
+            </button>
+        </div>
+
+    </div>
+</section>
+
+<!-- ================= ORDER SUMMARY ================= -->
+<section class="order-summary reveal">
+    <h2>Your Order</h2>
+    <ul id="orderList"></ul>
+
+    <p class="total">Total: ₹<span id="totalPrice">0</span></p>
+
+    <div class="order-actions">
+        <button class="btn whatsapp-btn ripple" id="whatsappOrder">
+            Order on WhatsApp
+        </button>
+        <button class="btn email-btn ripple" id="emailOrder">
+            Order via Email
+        </button>
+    </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer class="footer">
+    <p>© 2025 Desi Angithi Dhaba</p>
+</footer>
+
+<!-- ================= JS ================= -->
+<script src="script.js"></script>
+</body>
+</html>
